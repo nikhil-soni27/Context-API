@@ -1,14 +1,12 @@
-import React from "react";
-import { APIContextProvider } from "./apiContext";
-import Users from "./Users";
-
-export default function App() {
-  return (
-    <APIContextProvider>
-      <div className="App">
-        <h1>Context API Application</h1>
-        <Users />
-      </div>
-    </APIContextProvider>
-  );
+import React from 'react'
+import ConfirmPassword from '../src/ConfirmPassword'
+import "./App.css"
+const App = () => {
+	return (
+		<div>
+			<ConfirmPassword/>
+		</div>
+	)
 }
+
+export default App

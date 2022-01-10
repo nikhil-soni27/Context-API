@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Poppins&family=Raleway&display=swap');
+body{
+	font-family:Poppins;
+}
+.container{
+	display: flex;
+	flex-flow: column;
+	height: 100vh;
+	align-items: space-around;
+	justify-content: center;
+}
+.userInput{
+	display: flex;
+	justify-content: center;
+}
+
+input{
+	margin: 10px;
+	height: 35px;
+	width: 65px;
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-family: arimo;
+	font-size: 1.2rem;
+	background: #eef2f3;
+}
+.button-div{
+	margin-top:2rem;
+	display: flex;
+	justify-content: space-between;
+}
+.cancel-btn{
+	width: 7rem;
+	height:3rem;
+	color: #97144d;
+	font-weight: 700;
+	border-radius:5px;
+	border: none;
+}
+.confirm-btn{
+	height:3rem;
+	background: #97144d;
+    color: #fff;
+	width: 14rem;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.modal {
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+	/* backdrop-filter: blur(5px); */
+	padding: 1rem;
+	text-align: center;
+	width: 28rem;
+	height: 10rem;
+	z-index: 10;
+	position: fixed;
+	top: 1vh;
+	left: 75vh;
+	  }
+	
