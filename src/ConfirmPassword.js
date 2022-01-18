@@ -1,14 +1,9 @@
-import React, { useEffect } from 'react';
-import {useState} from 'react'
+import React,{useState} from 'react';
 
 const ConfirmPassword=()=> {
     
 const [otp, setOtp] = useState(new Array(4).fill(""));
 const [otp2, setOtp2] = useState(new Array(4).fill(""));
-
-useEffect(()=>{
-  console.log(otp,'otp')
-},[otp])
 
 const handleChange = (element, index) => {
     console.log(element.nextSibling,'sibling')
@@ -37,13 +32,6 @@ const handleChange2 = (element, index) => {
          element.previousSibling.focus()
      }
 }
-// const handleBack2=(e)=>{        
-//     if (e.key==="Backspace") {
-//         // setOtp2(["","","",""])
-//         // e.target.previousSibling.focus();
-//         // e.stopPropagation();
-//       }   
-// }
 
     const openmodalHandler=()=>{
         if(JSON.stringify(otp) === JSON.stringify(otp2)){
@@ -53,24 +41,6 @@ const handleChange2 = (element, index) => {
             }      
 }
 
-
-// const inputfocus = (elmnt) => {
-//     if (elmnt.key === "Delete" || elmnt.key === "Backspace") {
-//       const next = elmnt.target.tabIndex - 2;
-//       if (next > -1) {
-
-//         elmnt.target.form.elements[next].focus()
-//       }
-//     }
-//     else {
-//       console.log("next");
-     
-//         const next = elmnt.target.tabIndex;
-//         if (next < 5) {
-//           elmnt.target.form.elements[next].focus()
-//         }
-//     }
-//   }
     const handleSubmit=(e)=>{
      e.preventDefault()    
 }
@@ -89,7 +59,6 @@ const handleChange2 = (element, index) => {
                                 name="password"
                                 maxLength="1"
                                 value={data}
-                                // onKeyDown={e => handleBack2(e)} 
                                 onChange={e => handleChange(e.target, index)}
                             />           
                         );
