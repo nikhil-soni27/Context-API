@@ -25,14 +25,16 @@ const handleChange2 = (element, index) => {
    
     if (isNaN(element.value)) return false;
     setOtp2([...otp2.map((d, idx) => (idx === index ? element.value : d))]);
-    if (element.nextSibling && !element.value === "") {
-        element.nextSibling.focus();
+    if(!element.value==""){
+        if (otp.length+1 || element.nextSibling) {
+            element.nextSibling.focus();
+        }
     }
+  
     if(element.value === ""){
          element.previousSibling.focus()
      }
-}
-
+    }
     const openmodalHandler=()=>{
         if(JSON.stringify(otp) === JSON.stringify(otp2)){
             alert("pin changed successfully")
